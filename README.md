@@ -8,12 +8,6 @@ Neste documento estão contidos os principais comandos e configurações para co
 
 _This document contains the main commands and settings for configuring/installing/use the `Bluetooth Acer Aspire E5-573` on `Linux Ubuntu`._
 
-## Revisão(ões)/Versão(ões)
-
-|Revisão número|Data da revisão|Descrição da revisão|Autor da revisão|
-|:-:|:-:|:-|:-|
-|0|03/10/2023|<ul><li>Revisão inicial/criação do documento.</li></ul>|Eden Denis F. da S. L. Santos|
-
 ## Descrição [2]
 
 ### `bluetooth`
@@ -28,21 +22,22 @@ O Bluetooth é uma tecnologia de comunicação sem fio de curto alcance amplamen
 
 2. Certifique-se de que seu sistema esteja limpo e atualizado.
 
-    2.1 Limpar o `cache` do gerenciador de pacotes APT. Especificamente, ele remove todos os arquivos de pacotes (`.deb`) baixados pelo APT e armazenados em `/var/cache/apt/archives/`. Digite o seguinte comando: `sudo apt clean` 
+    2.1 Limpar o `cache` do gerenciador de pacotes `apt`. Especificamente, ele remove todos os arquivos de pacotes (`.deb`) baixados pelo `apt` e armazenados em `/var/cache/apt/archives/`. Digite o seguinte comando: `sudo apt clean` 
     
     2.2 Remover pacotes `.deb` antigos ou duplicados do cache local. É útil para liberar espaço, pois remove apenas os pacotes que não podem mais ser baixados (ou seja, versões antigas de pacotes que foram atualizados). Digite o seguinte comando: `sudo apt autoclean`
 
     2.3 Remover pacotes que foram automaticamente instalados para satisfazer as dependências de outros pacotes e que não são mais necessários. Digite o seguinte comando: `sudo apt autoremove -y`
 
-    2.4 Buscar as atualizações disponíveis para os pacotes que estão instalados em seu sistema. Digite o seguinte comando e pressione `Enter`: `sudo apt update -y`
+    2.4 Buscar as atualizações disponíveis para os pacotes que estão instalados em seu sistema. Digite o seguinte comando e pressione `Enter`: `sudo apt update`
 
-    2.5 Para ver a lista de pacotes a serem atualizados, digite o seguinte comando e pressione `Enter`:  `sudo apt list --upgradable`
+    2.5 **Corrigir pacotes quebrados**: Isso atualizará a lista de pacotes disponíveis e tentará corrigir pacotes quebrados ou com dependências ausentes: `sudo apt --fix-broken install`
 
-    2.6 Realmente atualizar os pacotes instalados para as suas versões mais recentes, com base na última vez que você executou `sudo apt update -y`. Digite o seguinte comando e pressione `Enter`: `sudo apt full-upgrade -y`
+    2.6 Limpar o `cache` do gerenciador de pacotes `apt`. Especificamente, ele remove todos os arquivos de pacotes (`.deb`) baixados pelo `apt` e armazenados em `/var/cache/apt/archives/`. Digite o seguinte comando: `sudo apt clean` 
+    
+    2.7 Para ver a lista de pacotes a serem atualizados, digite o seguinte comando e pressione `Enter`:  `sudo apt list --upgradable`
 
-    2.7 Remover pacotes que foram automaticamente instalados para satisfazer as dependências de outros pacotes e que não são mais necessários. Digite o seguinte comando: `sudo apt autoremove -y`
-
-    2.8 Remover pacotes `.deb` antigos ou duplicados do cache local. É útil para liberar espaço, pois remove apenas os pacotes que não podem mais ser baixados (ou seja, versões antigas de pacotes que foram atualizados). Digite o seguinte comando: `sudo apt autoclean`
+    2.8 Realmente atualizar os pacotes instalados para as suas versões mais recentes, com base na última vez que você executou `sudo apt update`. Digite o seguinte comando e pressione `Enter`: `sudo apt full-upgrade -y`
+    
 
 3. **Instale os pacotes de firmware:** Instale os pacotes `linux-firmware` e `linux-firmware-atheros` usando o gerenciador de pacotes `apt`.
 
@@ -62,6 +57,19 @@ Salve o arquivo e saia do editor (`Ctrl+O` para salvar, `Ctrl+X` para sair no `n
 Depois de seguir esses passos, o Bluetooth deve funcionar corretamente no seu notebook `Acer Aspire E5-573` rodando `Linux Ubuntu`.
 
 Espero que isso ajude você a documentar o processo!
+
+### 1.2 Código completo para configurar/instalar
+
+Para configurar/instalar o `Bluetooth do Acer Aspire E5-573` no `Linux Ubuntu` sem precisar digitar linha por linha, você pode seguir estas etapas:
+
+1. Abra o `Terminal Emulator`. Você pode fazer isso pressionando: `Ctrl + Alt + T`
+
+2. Digite o seguinte comando e pressione `Enter`:
+
+    ```
+    NÃO há.
+    ```
+    
 
 ## Referências
 
